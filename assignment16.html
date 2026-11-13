@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Feedback Form</title>
+    <style>
+        .form-container {
+            border: 1px solid #888;
+            padding: 20px 20px 20px 45px;
+            width: 550px;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 16px;
+        }
+        select {
+            padding: 2px 5px;
+            font-family: Arial, sans-serif;
+            border-radius: 3px;
+            border: 1px solid #aaa;
+        }
+        textarea {
+            width: 300px;
+            height: 75px;
+            margin-top: 2px;
+            font-family: Arial, sans-serif;
+        }
+        button, input[type="submit"], input[type="reset"] {
+            padding: 3px 8px;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            border: 1px solid #aaa;
+            border-radius: 2px;
+            background-color: #f8f8f8;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <form action="#" method="post">
+            <!-- Course Dropdown -->
+            <label for="course">Course:</label>
+            <select id="course" name="course">
+                <option value="ece" selected>ECE</option>
+                <option value="cse">CSE</option>
+                <option value="me">ME</option>
+                <option value="ce">CE</option>
+            </select>
+
+            <br><br>
+
+            <!-- Feedback Textarea -->
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="feedback" placeholder="Write here..."></textarea>
+
+            <br><br>
+
+            <!-- Action Buttons -->
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <button type="button" onclick="alert('Button Clicked!')">Click Me</button>
+        </form>
+    </div>
+
+</body>
+</html>
